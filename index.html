@@ -451,11 +451,44 @@
         </button>
         <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
         <form action="">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="list">
+            <li>
+              <label for="name">Имя</label>
+              <input type="text" name="name" id="name" />
+            </li>
+            <li>
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" />
+            </li>
+            <li>
+              <label for="mail">Почта</label>
+              <input type="email" name="mail" id="mail" />
+            </li>
           </ul>
+          <div>
+            <label for="comment">Комментарий</label>
+            <textarea
+              class="form-comment"
+              name="comment"
+              id="comment"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form-agree">
+            <label for="">
+              <input
+                class="form-checkbox"
+                type="checkbox"
+                name="checkbox"
+                id="agree"
+              />
+              <span
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="form-agree-link" href="">Условия договора</a></span
+              >
+            </label>
+          </div>
+          <button class="send-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
