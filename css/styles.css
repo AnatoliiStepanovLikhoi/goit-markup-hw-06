@@ -833,6 +833,9 @@ p{
     align-items: center;
 }
 
+/* .form{
+} */
+
 .form-title{
     margin-bottom: 30px;
     font-size: 20px;
@@ -840,6 +843,29 @@ p{
     line-height: 1.15;
     text-align: center;
     color: var(--primary-text-color)
+}
+
+/* .form-list{
+} */
+
+.form-field{
+    outline: 1px solid tomato;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-label{
+    margin-bottom: 4px;
+}
+
+.form-field input{
+    margin: 0;
+    padding: 10px 12px;
+}
+
+.form-text textarea::placeholder{
+    font-size: 20px;
 }
 
 .send-button{

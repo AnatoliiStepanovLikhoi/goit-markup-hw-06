@@ -450,27 +450,28 @@
           </svg>
         </button>
         <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form action="">
-          <ul class="list">
-            <li>
-              <label for="name">Имя</label>
-              <input type="text" name="name" id="name" />
+        <form class="form" action="">
+          <ul class="form-list list">
+            <li class="form-field">
+              <label class="form-label" for="name">Имя</label>
+              <input class="form-input" type="text" name="name" id="name" />
             </li>
-            <li>
-              <label for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel" />
+            <li class="form-field">
+              <label class="form-label for="tel">Телефон</label>
+              <input class="form-input" type="tel" name="tel" id="tel" />
             </li>
-            <li>
-              <label for="mail">Почта</label>
-              <input type="email" name="mail" id="mail" />
+            <li class="form-field">
+              <label class="form-label for="mail">Почта</label>
+              <input class="form-input" type="email" name="mail" id="mail" />
             </li>
           </ul>
-          <div>
+          <div class="form-text">
             <label for="comment">Комментарий</label>
             <textarea
               class="form-comment"
               name="comment"
               id="comment"
+              placeholder="Введите текст"
               rows="10"
             ></textarea>
           </div>
