@@ -853,6 +853,8 @@ p{
 } */
 
 .form-field{
+    position: relative;
+
     outline: 1px solid tomato;
     display: flex;
     flex-direction: column;
@@ -865,7 +867,15 @@ p{
 
 .form-field input{
     margin: 0;
-    padding: 10px 12px;
+    padding: 12px 12px 12px 41px;;
+}
+
+.form-icon{
+    position: absolute;
+    top: 32px;
+    left: 19px;
+    width: 12px;
+    height: 12px;
 }
 
 .form-text textarea::placeholder{
