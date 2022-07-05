@@ -772,6 +772,10 @@ p{
     /* color: var(--secondary-icon-color); */
 }
 
+.footer-subscribe{
+    margin-left: auto;
+}
+
 /* Backdrop */
 
 .backdrop{
