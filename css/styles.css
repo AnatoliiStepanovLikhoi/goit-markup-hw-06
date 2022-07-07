@@ -916,7 +916,6 @@ p{
     position: relative;
     display: block;
 
-    outline: 1px solid tomato;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -934,10 +933,10 @@ p{
 .form-icon{
     position: absolute;
 
-    top: 32px;
+    top: 29px;
     left: 15px;
-    width: 12px;
-    height: 12px;
+    /* width: 12px;
+    height: 12px; */
 }
 
 .form-text textarea::placeholder{
@@ -952,6 +951,8 @@ p{
     line-height: 1.17;
     color: var(--description-text-color);
     letter-spacing: 0.01em;
+
+    transition: all 250ms var(--timing-transition);
 }
 
 .form-input{
@@ -988,15 +989,54 @@ p{
 }
 
 .form-agree{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     max-width: 425px;
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
     line-height: 1.71;
     color: var(--description-text-color);
+}
+
+.form-agree-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-checkbox{
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.checkbox-icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+
+    border: 2px solid;
+    border-color: var(--primary-text-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 250ms var(--timing-transition);
+}
+
+.form-checkbox:checked + .checkbox-icon{
+    background-color: var(--accent-text-color);
+    border-color: var(--accent-text-color);
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
 }
 
 .form-agree-link{
@@ -1023,7 +1063,5 @@ p{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    text-decoration: none;
-    text-align: center;
     letter-spacing: 0.06em;
 }

@@ -435,11 +435,13 @@
             </li>
           </ul>
         </div>
+
+        <!-- footer subscribe form -->
         <div class="footer-subscribe">
           <p class="footer-connect-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
           <form autocomplete="off">
             <div class="footer-form">
-              <label class="footer-form-field">
+              <label class="footer-form-field" name="mail">
                 <input
                   class="footer-form-input"
                   type="email"
@@ -478,21 +480,21 @@
             <li class="form-field">
               <label class="form-label" for="name">Имя</label>
               <input class="form-input" type="text" name="name" id="name" />
-              <svg class="form-icon">
+              <svg class="form-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#person"></use>
               </svg>
             </li>
             <li class="form-field">
               <label class="form-label" for="tel">Телефон</label>
               <input class="form-input" type="tel" name="tel" id="tel" />
-              <svg class="form-icon">
+              <svg class="form-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </li>
             <li class="form-field">
               <label class="form-label" for="mail">Почта</label>
               <input class="form-input" type="email" name="mail" id="mail" />
-              <svg class="form-icon">
+              <svg class="form-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </li>
@@ -507,13 +509,9 @@
             ></textarea>
           </div>
           <div class="form-agree">
-            <label for="">
-              <input
-                class="form-checkbox"
-                type="checkbox"
-                name="checkbox"
-                id="agree"
-              />
+            <label class="form-agree-line">
+              <input class="form-checkbox" type="checkbox" name="checkbox" />
+              <span class="checkbox-icon"> </span>
               <span
                 >Соглашаюсь с рассылкой и принимаю
                 <a class="form-agree-link" href="">Условия договора</a></span
