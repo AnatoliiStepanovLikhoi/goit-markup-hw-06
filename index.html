@@ -437,11 +437,22 @@
         </div>
         <div class="footer-subscribe">
           <p class="footer-connect-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-          <form action="">
-            <div>
-              <label for=""> </label>
-              <input type="text" />
-              <button></button>
+          <form autocomplete="off">
+            <div class="footer-form">
+              <label class="footer-form-field">
+                <input
+                  class="footer-form-input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </label>
+              <button class="subscribe-button" type="submit">
+                <span class="subscribe-button-text">Подписаться</span>
+                <svg class="subscribe-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>
